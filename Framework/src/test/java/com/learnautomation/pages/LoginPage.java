@@ -15,6 +15,8 @@ public class LoginPage {
 		// ldriver will come from the main testcase. so whatever driver reference that 
 		// we pass from the main tc will be stored into this driver.
 		this.driver = ldriver;
+		
+		// add new comment #1
 	}
 	
 	@FindBy(name="email") WebElement uname;
