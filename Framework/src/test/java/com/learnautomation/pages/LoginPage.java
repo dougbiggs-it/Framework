@@ -24,7 +24,6 @@ public class LoginPage {
 	@FindBy(xpath="//body/div[@id='ui']/div[1]/div[1]/form[1]/div[1]/div[3]") WebElement loginBtn;
 //	@FindBy(xpath="//button[contains(text(),'Login')]") WebElement loginBtn;
 
-
 	public void loginToCRM(String usernameApplication, String passwordApplication) {
 	
 		Reporter.log("loginToCRM(): Starting", true);
