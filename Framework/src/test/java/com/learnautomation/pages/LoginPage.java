@@ -35,6 +35,7 @@ public class LoginPage {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			//System.out.println("Got It button did not appear"+e.getMessage());
 		}
 		
 		this.uname.sendKeys(usernameApplication);

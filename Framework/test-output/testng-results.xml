@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
       <![CDATA[@BeforeSuite - SetupSuite(): Setting up reports and Test is getting ready]]>
@@ -17,16 +17,13 @@
       <![CDATA[loginApp(): Starting]]>
     </line>
     <line>
-      <![CDATA[@AfterMethod - tearDownMethod(): starting]]>
+      <![CDATA[loginToCRM(): Starting]]>
     </line>
     <line>
-      <![CDATA[@AfterMethod - tearDownMethod(): finished]]>
+      <![CDATA[loginToCRM(): Finished]]>
     </line>
     <line>
-      <![CDATA[loginApp2(): Starting]]>
-    </line>
-    <line>
-      <![CDATA[loginApp2(): Finished]]>
+      <![CDATA[loginApp(): Finished]]>
     </line>
     <line>
       <![CDATA[@AfterMethod - tearDownMethod(): starting]]>
@@ -41,12 +38,12 @@
       <![CDATA[@AfterClass - tearDown():Test completed >> Reports generated]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="29577" started-at="2021-07-12T19:21:33Z" finished-at="2021-07-12T19:22:03Z">
+  <suite name="Suite" duration-ms="35569" started-at="2021-07-22T17:25:49Z" finished-at="2021-07-22T17:26:25Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="29577" started-at="2021-07-12T19:21:33Z" finished-at="2021-07-12T19:22:03Z">
+    <test name="Test" duration-ms="35569" started-at="2021-07-22T17:25:49Z" finished-at="2021-07-22T17:26:25Z">
       <class name="com.learnautomation.testcases.LoginTestCRM">
-        <test-method status="PASS" signature="SetupSuite()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@475e586c]" name="SetupSuite" is-config="true" duration-ms="708" started-at="2021-07-12T19:21:33Z" finished-at="2021-07-12T19:21:33Z">
+        <test-method status="PASS" signature="SetupSuite()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@475e586c]" name="SetupSuite" is-config="true" duration-ms="799" started-at="2021-07-22T17:25:48Z" finished-at="2021-07-22T17:25:49Z">
           <reporter-output>
             <line>
               <![CDATA[@BeforeSuite - SetupSuite(): Setting up reports and Test is getting ready]]>
@@ -56,7 +53,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- SetupSuite -->
-        <test-method status="PASS" signature="startup()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@475e586c]" name="startup" is-config="true" duration-ms="10015" started-at="2021-07-12T19:21:33Z" finished-at="2021-07-12T19:21:44Z">
+        <test-method status="PASS" signature="startup()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@475e586c]" name="startup" is-config="true" duration-ms="9914" started-at="2021-07-22T17:25:49Z" finished-at="2021-07-22T17:25:59Z">
           <reporter-output>
             <line>
               <![CDATA[@BeforeClass - Startup(): Trying to start Browser and getting application ready]]>
@@ -66,83 +63,27 @@
             </line>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method status="FAIL" signature="loginApp()[pri:1, instance:com.learnautomation.testcases.LoginTestCRM@475e586c]" name="loginApp" duration-ms="12615" started-at="2021-07-12T19:21:44Z" finished-at="2021-07-12T19:21:56Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'Got It')]"}
-  (Session info: chrome=91.0.4472.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DOUG-PC', ip: '10.0.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\doug\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:30248}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 45a239029b29c1f2c7dea7d11b891c67
-*** Element info: {Using=xpath, value=//button[contains(text(),'Got It')]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(),'Got It')]"}
-  (Session info: chrome=91.0.4472.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DOUG-PC', ip: '10.0.0.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\doug\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:30248}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 45a239029b29c1f2c7dea7d11b891c67
-*** Element info: {Using=xpath, value=//button[contains(text(),'Got It')]}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.learnautomation.testcases.LoginTestCRM.loginApp(LoginTestCRM.java:74)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="loginApp()[pri:1, instance:com.learnautomation.testcases.LoginTestCRM@475e586c]" name="loginApp" duration-ms="19379" started-at="2021-07-22T17:25:59Z" finished-at="2021-07-22T17:26:19Z">
           <reporter-output>
             <line>
               <![CDATA[loginApp(): Starting]]>
             </line>
+            <line>
+              <![CDATA[loginToCRM(): Starting]]>
+            </line>
+            <line>
+              <![CDATA[loginToCRM(): Finished]]>
+            </line>
+            <line>
+              <![CDATA[loginApp(): Finished]]>
+            </line>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@475e586c]" name="tearDownMethod" is-config="true" duration-ms="209" started-at="2021-07-12T19:21:56Z" finished-at="2021-07-12T19:21:57Z">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@475e586c]" name="tearDownMethod" is-config="true" duration-ms="133" started-at="2021-07-22T17:26:19Z" finished-at="2021-07-22T17:26:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginApp status=FAILURE method=LoginTestCRM.loginApp()[pri:1, instance:com.learnautomation.testcases.LoginTestCRM@475e586c] output=loginApp(): Starting]]]>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=LoginTestCRM.loginApp()[pri:1, instance:com.learnautomation.testcases.LoginTestCRM@475e586c] output=loginApp(): Starting]]]>
               </value>
             </param>
           </params>
@@ -155,34 +96,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="loginApp2()[pri:2, instance:com.learnautomation.testcases.LoginTestCRM@475e586c]" name="loginApp2" duration-ms="1" started-at="2021-07-12T19:21:57Z" finished-at="2021-07-12T19:21:57Z">
-          <reporter-output>
-            <line>
-              <![CDATA[loginApp2(): Starting]]>
-            </line>
-            <line>
-              <![CDATA[loginApp2(): Finished]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginApp2 -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@475e586c]" name="tearDownMethod" is-config="true" duration-ms="175" started-at="2021-07-12T19:21:57Z" finished-at="2021-07-12T19:21:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginApp2 status=SUCCESS method=LoginTestCRM.loginApp2()[pri:2, instance:com.learnautomation.testcases.LoginTestCRM@475e586c] output=loginApp2(): Starting]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[@AfterMethod - tearDownMethod(): starting]]>
-            </line>
-            <line>
-              <![CDATA[@AfterMethod - tearDownMethod(): finished]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@475e586c]" name="tearDown" is-config="true" duration-ms="6349" started-at="2021-07-12T19:21:57Z" finished-at="2021-07-12T19:22:03Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.learnautomation.testcases.LoginTestCRM@475e586c]" name="tearDown" is-config="true" duration-ms="6118" started-at="2021-07-22T17:26:19Z" finished-at="2021-07-22T17:26:25Z">
           <reporter-output>
             <line>
               <![CDATA[@AfterClass - tearDown(): Test is about to end]]>

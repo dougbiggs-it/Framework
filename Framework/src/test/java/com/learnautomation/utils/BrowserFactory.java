@@ -16,8 +16,8 @@ public class BrowserFactory {
 			ldriver = new ChromeDriver();
 			
 		}
-		else if (browserName.equals("FireFox")) {
-			System.setProperty("webdriver.gecko.driver", "./Drivers/gecko.exe");
+		else if (browserName.equals("Firefox")) {
+			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 			ldriver = new FirefoxDriver();
 		}
 		else if (browserName.equals("IE")) {

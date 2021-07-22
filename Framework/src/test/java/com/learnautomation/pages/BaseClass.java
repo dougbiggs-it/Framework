@@ -10,6 +10,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
+
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 
@@ -58,9 +60,10 @@ public class BaseClass {
 	
 	}
 	
-	
+	@Parameters({"browser", "urlToBeTested"})
 	@BeforeClass
-	public void startup() {
+	public void startup(String browser, String url) {
+	//public void startup() {
 	//System.out.println("> entering BeforeClass startup()");
 	Reporter.log("@BeforeClass - Startup(): Trying to start Browser and getting application ready", true);
 
@@ -72,7 +75,8 @@ public class BaseClass {
 		}
 		
 		//driver = BrowserFactory.startApplication(driver, "Chrome", "http://freecrm.com");
-		driver = BrowserFactory.startApplication(driver, config.getBrowser(), config.getStagingURL());
+		//driver = BrowserFactory.startApplication(driver, config.getBrowser(), config.getStagingURL());
+		driver = BrowserFactory.startApplication(driver, browser, url);
 		//System.out.println("< exiting BeforeClass startup()");
 		Reporter.log("@BeforeClass - Startup(): Browser and Application are up and running", true);
 
