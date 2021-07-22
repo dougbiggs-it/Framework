@@ -71,7 +71,12 @@ public class LoginTestCRM extends BaseClass{
 		// click Got It btn
 		Thread.sleep(2000);
 		System.out.println("clicking Got It button...");
-		driver.findElement(By.xpath("//button[contains(text(),'Got It')]")).click();
+		try {
+			driver.findElement(By.xpath("//button[contains(text(),'Got It')]")).click();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		// click login btn
 		Thread.sleep(2000);
