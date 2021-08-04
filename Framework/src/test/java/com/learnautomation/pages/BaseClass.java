@@ -21,7 +21,6 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
-//import com.aventstack.extentreports.reporter.ExtentReporter;
 import com.learnautomation.utils.BrowserFactory;
 import com.learnautomation.utils.ConfigDataProvider;
 import com.learnautomation.utils.ExcelDataProvider;
@@ -108,7 +107,7 @@ public class BaseClass {
 	}
 	
 	@AfterMethod	// Will take a screenshot after every test case even if failure occurs
-	public void tearDownMethod(ITestResult result)
+	public void tearDownMethod(ITestResult result) throws IOException
 	{
 		Reporter.log("@AfterMethod - tearDownMethod(): starting", true);
 
@@ -126,12 +125,8 @@ public class BaseClass {
 		}
 		else if(result.getStatus()==ITestResult.SUCCESS)
 		{
-			try {
-				logger.pass("Test Passed", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenshot(driver)).build());
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			logger.pass("Test Passed", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenshot(driver)).build());
+			
 		}
 		else if(result.getStatus()==ITestResult.SKIP)
 		{
